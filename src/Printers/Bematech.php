@@ -124,7 +124,7 @@ class Bematech extends DefaultPrinter implements PrinterInterface
         if ($this->printerMode == 'ESCPOS') {
             $nmod = 1;
         }
-        $this->buffer->write(self::GS . chr(249) . chr(53) . $nmode);
+        $this->buffer->write(self::GS . chr(249) . chr(53) . $nmod);
     }
     
     /**
